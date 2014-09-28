@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Design:</strong>
+  <%= @design.design_id %>
+</p>
+
+<p>
+  <strong>Product:</strong>
+  <%= @design.product_id %>
+</p>
+
+<p>
+  <strong>Account:</strong>
+  <%= @design.account_id %>
+</p>
+
+<p>
+  <strong>Account file:</strong>
+  <%= @design.account_file %>
+</p>
+
+<p>
+  <strong>Save method:</strong>
+  <%= @design.save_method %>
+</p>
+
+<p>
+  <strong>Total units:</strong>
+  <%= @design.total_units %>
+</p>
+
+<p>
+  <strong>Has upload:</strong>
+  <%= @design.has_upload %>
+</p>
+
+<p>
+  <strong>Created at:</strong>
+  <%= @design.created_at %>
+</p>
+
+<p>
+  <strong>Updated at:</strong>
+  <%= @design.updated_at %>
+</p>
+
+<p>
+  <strong>Postal code:</strong>
+  <%= @design.postal_code %>
+</p>
+
+<%= link_to 'Edit', edit_design_path(@design) %> |
+<%= link_to 'Back', designs_path %>

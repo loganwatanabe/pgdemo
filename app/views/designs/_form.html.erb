@@ -1,0 +1,57 @@
+<%= form_for(@design) do |f| %>
+  <% if @design.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@design.errors.count, "error") %> prohibited this design from being saved:</h2>
+
+      <ul>
+      <% @design.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :design_id %><br>
+    <%= f.number_field :design_id %>
+  </div>
+  <div class="field">
+    <%= f.label :product_id %><br>
+    <%= f.number_field :product_id %>
+  </div>
+  <div class="field">
+    <%= f.label :account_id %><br>
+    <%= f.number_field :account_id %>
+  </div>
+  <div class="field">
+    <%= f.label :account_file %><br>
+    <%= f.text_field :account_file %>
+  </div>
+  <div class="field">
+    <%= f.label :save_method %><br>
+    <%= f.text_field :save_method %>
+  </div>
+  <div class="field">
+    <%= f.label :total_units %><br>
+    <%= f.number_field :total_units %>
+  </div>
+  <div class="field">
+    <%= f.label :has_upload %><br>
+    <%= f.check_box :has_upload %>
+  </div>
+  <div class="field">
+    <%= f.label :created_at %><br>
+    <%= f.date_select :created_at %>
+  </div>
+  <div class="field">
+    <%= f.label :updated_at %><br>
+    <%= f.date_select :updated_at %>
+  </div>
+  <div class="field">
+    <%= f.label :postal_code %><br>
+    <%= f.number_field :postal_code %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

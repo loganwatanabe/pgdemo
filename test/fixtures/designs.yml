@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  design_id: 1
+  product_id: 1
+  account_id: 1
+  account_file: MyString
+  save_method: MyString
+  total_units: 1
+  has_upload: false
+  created_at: 2014-09-11
+  updated_at: 2014-09-11
+  postal_code: 1
+
+two:
+  design_id: 1
+  product_id: 1
+  account_id: 1
+  account_file: MyString
+  save_method: MyString
+  total_units: 1
+  has_upload: false
+  created_at: 2014-09-11
+  updated_at: 2014-09-11
+  postal_code: 1
